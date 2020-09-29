@@ -64,6 +64,8 @@ Testing on a single image: `python code/predict.py`
 
 If you find this code useful in your research, please consider citing the paper:
 
+BibTex:
+
 ```
 @article{sagar2020semantic,
   title={Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars},
@@ -72,6 +74,10 @@ If you find this code useful in your research, please consider citing the paper:
   year={2020}
 }
 ```
+
+APA:
+
+`Sagar, A., & Soundrapandiyan, R. (2020). Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars. arXiv preprint arXiv:2007.12685.`
 
 ## License
 
