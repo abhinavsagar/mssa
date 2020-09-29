@@ -2,10 +2,7 @@
 Code for the paper `Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars`.
 
 
-Link to [Paper](https://abhinavsagar.github.io/files/sem_seg.pdf).
-
-Link to [Blog](https://towardsdatascience.com/semantic-segmentation-with-multi-scale-spatial-attention-5442ac808b3e).
-
+Link to [Paper](https://arxiv.org/pdf/2007.12685).
 
 ## Abstract
 
