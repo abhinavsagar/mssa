@@ -1,8 +1,7 @@
 # Semantic Segmentation With Multi Scale Spatial Attention
 Code for the paper `Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars`.
 
-
-Link to [Paper](https://arxiv.org/pdf/2007.12685).
+https://arxiv.org/pdf/2007.12685
 
 ## Abstract
 
