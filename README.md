@@ -6,21 +6,31 @@ https://arxiv.org/pdf/2007.12685
 
 ## Abstract
 
-In this paper, we present a novel neural network using multi scale feature fusion at
-various scales for accurate and efficient semantic image segmentation. We have
-used dilated convolutional layers in downsampling part, transposed convolutional
-layers in the upsampling part and used concat layers to merge them. We used skip
-connections in between alternate blocks which are comprised of convolutional and
-max pooling layers. We present an in depth theoretical analysis of our network
-with training and optimization details. We evaluated our network on the Camvid
-dataset using mean accuracy per class and Intersection Over Union (IOU) as the
-evaluation metrics on the test set. Our model outperforms previous state of the
-art networks on semantic segmentation achieving mean IOU value of 74.12 while
-running at >100 FPS.
+In this paper, we present a novel neural network using multi scale feature fusion
+at various scales for accurate and efficient semantic image segmentation. We
+used ResNet based feature extractor, dilated convolutional layers in downsampling
+part, atrous convolutional layers in the upsampling part and used concat operation
+to merge them. A new attention module is proposed to encode more contextual
+information and enhance the receptive field of the network. We present an in depth
+theoretical analysis of our network with training and optimization details. Our
+network was trained and tested on the Camvid dataset and Cityscapes dataset using
+mean accuracy per class and Intersection Over Union (IOU) as the evaluation
+metrics. Our model outperforms previous state of the art methods on semantic
+segmentation achieving mean IOU value of 74.12 while running at >100 FPS.
 
 ## Data
 
-The dataset can be downloaded from [here](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/).
+1. `Camvid dataset`: The Cambridge-driving Labeled Video Database (CamVid) is a collection of
+videos with object class semantic labels, complete with metadata. The database provides ground truth
+labels that associate each pixel with one of 32 classes. The images are of size 360×480. The original
+images are taken as ground truth. For any algorithm, the metrics are always evaluated in comparison
+to the ground truth data. The ground truth information is provided in the dataset for the training and
+test set.
+
+2. `Cityscapes dataset`: This dataset contains urban street scenes images from 50 different cities. The
+images are divided into 5,000 finely annotated images and 19,998 coarsely annotated images. The
+total number of classes in the dataset is 30, but we have only used 19 classes for both training and
+evaluation. The images in training, validation and test set are 2,975, 500, 1,525 respectively.
 
 Set up the folders in the following manner:
 
@@ -34,9 +44,13 @@ Set up the folders in the following manner:
 |   ├── test_labels
 ```
 
+## Channel Attention Module
+
+![roc-auc](images/ss5.png)
+
 ## Network Architecture
 
-![roc-auc](images/img1.png)
+![roc-auc](images/ss3.png)
 
 ## Usage
 
@@ -46,15 +60,27 @@ Testing: `python code/test.py`
 
 Testing on a single image: `python code/predict.py`
 
+## Evaluation Metrics
+
+1. `Mean Accuracy per-class` - This metric outputs the class wise prediction accuracy per pixel.
+
+2. `Mean IOU` - It is a segmentation performance parameter that measures the overlap between two
+objects by calculating the ratio of intersection and union with ground truth masks. This metric is also
+known as Jaccard Index.
+
 ## Results
 
 ### Loss/Accuracy vs epochs
 
 ![roc-auc](images/img2.png)
 
-### Comparision with SOTA
+### Comparision with SOTA using Camid dataset
 
 ![roc-auc](images/img3.png)
+
+### Comparision with SOTA using Cityscapes dataset
+
+![roc-auc](images/ss6.png)
 
 ### Results for predicted image
 
