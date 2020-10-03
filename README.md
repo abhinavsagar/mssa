@@ -82,10 +82,12 @@ known as Jaccard Index.
 
 ![roc-auc](images/ss6.png)
 
-### Results using CamVid dataset. First column: input image from dataset, second column: predicted segmentation from our network and third column: ground truth segmentation.
+### Results using CamVid dataset:
 
 ![roc-auc](images/img4.png)
 
+First column: input image from dataset, second column: predicted segmentation from our network and third column: ground truth segmentation.
+ 
 ## Citing
 
 If you find this code useful in your research, please consider citing the paper:
