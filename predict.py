@@ -3,9 +3,6 @@ import tensorflow as tf
 import argparse
 import numpy as np
 
-from utils import utils, helpers
-from builders import model_builder
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--image', type=str, default=None, required=True, help='The image you want to predict on. ')
 parser.add_argument('--checkpoint_path', type=str, default=None, required=True, help='The path to the latest checkpoint weights for your model.')
