@@ -12,9 +12,6 @@ import subprocess
 import matplotlib
 matplotlib.use('Agg')
 
-from utils import utils, helpers
-from builders import model_builder
-
 import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser()
