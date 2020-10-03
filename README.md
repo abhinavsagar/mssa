@@ -54,11 +54,11 @@ Set up the folders in the following manner:
 
 ## Usage
 
-Training: `python code/train.py`
+Training: `python train.py`
 
-Testing: `python code/test.py`
+Testing: `python test.py`
 
-Testing on a single image: `python code/predict.py`
+Testing on a single image: `python predict.py`
 
 ## Evaluation Metrics
 
@@ -70,19 +70,19 @@ known as Jaccard Index.
 
 ## Results
 
-### Loss/Accuracy vs epochs
+### Loss and Accuracy vs epochs:
 
 ![roc-auc](images/img2.png)
 
-### Comparision with SOTA using Camid dataset
+### Comparision with SOTA using Camid dataset:
 
 ![roc-auc](images/img3.png)
 
-### Comparision with SOTA using Cityscapes dataset
+### Comparision with SOTA using Cityscapes dataset:
 
 ![roc-auc](images/ss6.png)
 
-### Results for predicted image
+### Results using CamVid dataset. First column: input image from dataset, second column: predicted segmentation from our network and third column: ground truth segmentation.
 
 ![roc-auc](images/img4.png)
 
@@ -101,9 +101,10 @@ BibTex:
 }
 ```
 
-APA:
+MLA:
 
-`Sagar, A., & Soundrapandiyan, R. (2020). Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars. arXiv preprint arXiv:2007.12685.`
+`Sagar, Abhinav, and RajKumar Soundrapandiyan. "Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars." arXiv preprint arXiv:2007.12685 (2020).`
+
 
 ## License
 
