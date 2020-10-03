@@ -1,8 +1,6 @@
 import tensorflow as tf
 from tensorflow.contrib import slim
-from frontends import resnet_utils
 
-resnet_arg_scope = resnet_utils.resnet_arg_scope
 
 @slim.add_arg_scope
 def bottleneck(inputs, depth, depth_bottleneck, stride, rate=1,
