@@ -3,9 +3,6 @@ import tensorflow as tf
 import argparse
 import numpy as np
 
-from utils import utils, helpers
-from builders import model_builder
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint_path', type=str, default=None, required=True, help='The path to the latest checkpoint weights for your model.')
 parser.add_argument('--crop_height', type=int, default=512, help='Height of cropped input image to network')
