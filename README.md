@@ -4,6 +4,25 @@ Code for the paper `Semantic Segmentation With Multi Scale Spatial Attention For
 
 https://arxiv.org/pdf/2007.12685
 
+## Citing
+
+If you find this code useful in your research, please consider citing the paper:
+
+BibTex:
+
+```
+@article{sagar2020semantic,
+  title={Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars},
+  author={Sagar, Abhinav and Soundrapandiyan, RajKumar},
+  journal={arXiv preprint arXiv:2007.12685},
+  year={2020}
+}
+```
+
+MLA:
+
+`Sagar, Abhinav, and RajKumar Soundrapandiyan. "Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars." arXiv preprint arXiv:2007.12685 (2020).`
+
 ## Abstract
 
 In this paper, we present a novel neural network using multi scale feature fusion
@@ -87,25 +106,6 @@ known as Jaccard Index.
 ![roc-auc](images/img4.png)
 
 First column: input image from dataset, second column: predicted segmentation from our network and third column: ground truth segmentation.
- 
-## Citing
-
-If you find this code useful in your research, please consider citing the paper:
-
-BibTex:
-
-```
-@article{sagar2020semantic,
-  title={Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars},
-  author={Sagar, Abhinav and Soundrapandiyan, RajKumar},
-  journal={arXiv preprint arXiv:2007.12685},
-  year={2020}
-}
-```
-
-MLA:
-
-`Sagar, Abhinav, and RajKumar Soundrapandiyan. "Semantic Segmentation With Multi Scale Spatial Attention For Self Driving Cars." arXiv preprint arXiv:2007.12685 (2020).`
 
 
 ## License
